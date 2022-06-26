@@ -6,7 +6,8 @@
 # data: 26/06/2022
 #
 # 1.	Em linguagem Python, faça um programa que leia um conjunto de 10 números inteiros, armazenando-o em uma
-# lista (L1), calcular o quadrado dos elementos dessa lista, armazenando o resultado em oura lista (L2), imprimir todas as listas
+# lista (L1), calcular o quadrado dos elementos dessa lista, armazenando o resultado em oura lista (L2),
+# imprimir todas as listas
 
 # entrada de dados
 
