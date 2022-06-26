@@ -30,4 +30,3 @@ for i in range(len(l1)): # criar um laço para verificar se o valor da lista l1 
     break # sair do laço
 
 print("fim do programa") # imprimir a mensagem de fim do programa
-    
