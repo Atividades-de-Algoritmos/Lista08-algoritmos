@@ -24,7 +24,6 @@ for p in range(3): # Criando um laço de repetição para ler 3 competições de
 
 # Processamento e saída de dados
 
-
 # Imprimindo quais foram as voltas e qual a mais rápida em cada competição
 
 for c in f1.keys(): # Criando um laço para listar as competições de F-1
