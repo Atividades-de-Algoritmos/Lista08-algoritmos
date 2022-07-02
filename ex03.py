@@ -1,34 +1,41 @@
 #
 #
-# autores:
+# Autores:
 # Michel Silva
+# Carlos Eduardo
 #
-# data: 26/06/2022
+# Data: 30/06/2022
 #
 #
-# 3.	Em linguagem Python, faça um programa que crie uma agenda de telefones (3 contatos) que seja um
+# 3 - Em linguagem Python, faça um programa que crie uma agenda de telefones (3 contatos) que seja um
 # dicionário para armazenar o nome (chave) e armazene os números de telefones (elemento), cada pessoa pode
 # ter 1 ou mais números de telefones, fazendo a leitura dos valores por meio de uma estrutura de repetição.
 # Depois, crie uma estrutura de repetição para listar todos os contados da agenda.
 
-# entrada de dados:
-# faça um programa que crie uma agenda de telefones (3 contatos) que seja um dicionário para armazenar
-# o nome (chave) e armazene os números de telefones (elemento), cada pessoa pode ter 1 ou mais números de
-# telefones, fazendo a leitura dos valores por meio de uma estrutura de repetição.
+# Entrada de dados
 
-agenda = dict()  # criar um dicionário vazio para armazenar os contatos
-for i in range(3): # criar um laço de repetição para ler 3 contatos e armazenar em um dicionário agenda
-  nome = input(f"informe o nome do contato[{i+1}]: ") # ler o nome do contato e armazenar em uma variável nome
-  fones = [] # criar uma lista vazia para armazenar os números de telefone do contato nome
-  while True: # criar um laço para ler os números de telefone do contato nome e armazenar em uma lista fones
-    fones.append(input("informe um número de fone: ")) # ler um número de telefone e armazenar em uma lista fones e adicionar na lista fones
-    valor = input("deseja informar outro número? (S/n)") # ler se deseja informar outro número de telefone e armazenar em uma variável valor
-    if valor != 'S': # se a variável valor não for igual a 'S'
-      break # sair do laço e continuar o programa
-  agenda[nome] = fones # adicionar o nome do contato e os números de telefone do contato nome no dicionário agenda e armazenar na chave nome e os valores da lista fones
+agenda = dict() # Criando um dicionário vazio para armazenar os contatos
 
-# Depois, crie uma estrutura de repetição para listar todos os contados da agenda.
-for i,y in agenda.items(): # criar um laço para listar os contatos da agenda e armazenar em uma variável i e em uma variável y
-  print(f"nome: {i} -> número(s): {y}") # imprimir o nome do contato e os números de telefone do contato nome na lista fones
+# Processamento de dados
 
-print("fim do programa") # imprimir a mensagem de fim do programa
+for i in range(3): # Criando um laço de repetição para ler 3 contatos e armazenar em um dicionário agenda
+  nome = input(f"\nInforme o nome do contato[{i+1}]: ") # Solicitando o nome do contato
+  fones = [] # Criando uma lista vazia para armazenar os números de telefone do contato
+  
+  while True: # Criando um laço para ler os números de telefone do contato nome e armazenar em uma lista fones
+    fones.append(input("Informe um número de fone: ")) # Solicitando um número de telefone e armazenando no final da lista fones usando o .append()
+    valor = input(f"\n{nome} tem outro número? (s/n)") # Solicitando se deseja informar outro número de telefone
+    
+    if valor.lower() != 's': # Se a variável valor não for igual a 's' executa a identação, .lower() método que joga todos caracteres pra minúsculo, ou seja, se o user digitar com S maíusculo o programa ainda vai rodar.
+      break # Saindo do laço com o break
+  
+  agenda[nome] = fones # Adicionando o nome do contato e os números de telefone do contato nome no dicionário agenda e armazenar na chave nome e os valores da lista fones
+
+# Saída de dados
+
+print('\nContatos Disponíveis\n') # Imprimindo mensagem no terminal
+
+for c, e in agenda.items(): # Criando um laço para listar os contatos da agenda
+  print(f"Nome: {c} | número(s): {e}") # Imprimindo o nome do contato e os números
+
+print("\nfim do programa") # Informando ao user que o programa terminou
