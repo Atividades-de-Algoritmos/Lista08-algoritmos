@@ -69,6 +69,7 @@ informe o valor[5]: 32
 lista 1 = [2, 4, 8, 16, 32]
 lista 2 = 4 16 64 256 1024
 ```
+
 <br>
 
 # ex02
