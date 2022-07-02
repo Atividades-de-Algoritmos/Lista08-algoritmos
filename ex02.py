@@ -45,5 +45,4 @@ print("A posição do maior elemento de l1 é:" , l1.index(maior) + 1) # Imprimi
     # break # Saindo do laço de repetição for
 
 # ---------------------------------------------------------------------------------- #
-
 print("\nfim do programa") # Informando ao user que o programa terminou
