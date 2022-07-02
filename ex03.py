@@ -1,5 +1,4 @@
 #
-#
 # Autores:
 # Michel Silva
 # Carlos Eduardo
